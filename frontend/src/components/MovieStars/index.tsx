@@ -39,7 +39,7 @@ function Star({ fill } : StarProps){
     else if (fill === 1){
         return <StarFull />
     }
-    else{
+    else {
         return <StarHalf />
     }
 }
@@ -50,11 +50,11 @@ function MovieStars({ score } : Props) {
 
     return (
         <div className="dsmovie-stars-container">
+            <Star fill={fills[0]} />
             <Star fill={fills[1]} />
             <Star fill={fills[2]} />
             <Star fill={fills[3]} />
             <Star fill={fills[4]} />
-            <Star fill={fills[5]} />
         </div>
     );
 }
